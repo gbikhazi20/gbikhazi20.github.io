@@ -1,127 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ecb439;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+html {
+  scroll-behavior: ssmooth;
+}
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+/* CSS Resets */
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <!-- Animate CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>George Bihazi</title>
-</head>
+ul {
+  list-style-type: none;
+}
 
-<body>
-    <!-- Navbar -->
-    <nav>
-        <h1><a href="#top">George Bikhazi</a></h1>
-        <ul class="navigation">
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#projects" class="nav-link">About Me</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-    </nav>
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 
+a:hover {
+  color: var(--secondary-color);
+}
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <img src="assets/images/ford-rain.jpg" alt="me-rugby" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__backInRight">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                repudiandae quos!
-            </p>
-        </div>
-        
-    </section>
+body {
+  font-family: var(--font-family);
+}
 
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
+nav h1 {
+  color: var(--primary-color);
+}
 
-    <!-- More about -->
-    <section class="more-about">
-        <h2>More About Me</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-            autem deleniti cupiditate molestias quis unde quae totam porro dicta
-            iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-            nostrum dolor minus, libero delectus praesentium perferendis
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            consequuntur labore? Ea totam voluptas amet!
-        </p>
-    </section>
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
 
-    <!-- Skills section -->
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2 class="projects-title">Some of my Recent Projects</h2>
-        <div class="projects-container">
-            <div class="project-container project-card">
-                <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Expense Tracker</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Netflix Clone</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Greeny Earth</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                    ratione vel inventore labore commodi modi quos culpa aut saepe!
-                    Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-        </div>
-    </section>
+nav ul li {
+  font-weight: var(--bold-font);
+}
 
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
 
-    <!-- Contact section -->
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
 
-    <!-- Social accounts - Fixed to the right -->
+.hero img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
-    <!-- Scroll to top -->
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
 
-    <!-- Footer section -->
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
 
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+.about-me {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
 
-</html>
+.about-me h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.about-me p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+.technical-skills {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.technical-skills h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.technical-skills p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.projects-container :hover {
+  transform: scale(1.015);
+  transition: all 0.4s ease;
+}
+
+.projects-container-2 :hover {
+  transform: scale(1.015);
+  transition: all 0.4s ease;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.projects-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
