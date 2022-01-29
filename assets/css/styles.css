@@ -56,7 +56,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(3, 101, 143, 0.13);
   border-radius: 8px;
 }
 
@@ -229,4 +229,3 @@ nav ul li {
   width: 3rem;
   height: 3rem;
 }
- 
