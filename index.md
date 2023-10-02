@@ -1,5 +1,9 @@
-Here you can say lots of fun things about your site.
+Hello there.
 
-Maybe say a some things about yourself.
+My name is George Bikhazi and I'm a student at Northeastern University. 
 
-Or maybe what you plan to blog about.
+Welcome to my blog!
+
+I've wanted to start a blog for a while, and I was finally motivated to do so as part of an assignment for a writing class I'm taking. So, here we are.
+
+
