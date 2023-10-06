@@ -1,4 +1,4 @@
-# But what exactly is the cost function?
+# But What Exactly is the Cost Function?
 
 Last semester, I took my first machine learning class in college. We spent a lot of time learning classical machine learning methods (think linear regressions, logistic regression, k-nearest neighbors, etc.), and eventually made our way to modern neural networks.
 
