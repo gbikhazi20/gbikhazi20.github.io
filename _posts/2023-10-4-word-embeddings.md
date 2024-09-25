@@ -53,3 +53,4 @@ This is a dangerous aspect of word embeddings, and luckily there are techniques 
 ### Sources
 
 https://papers.nips.cc/paper_files/paper/2016/file/a486cd07e4ac3d270571622f4f316ec5-Paper.pdf
+
